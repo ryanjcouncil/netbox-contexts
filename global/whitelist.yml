@@ -5,20 +5,20 @@ whitelist:
     # Whitelist for public IP access to devices.
     ##################################################
     public:
-      - cidr: /24
-        description: Headquarters
+      - description: Headquarters
         network: 144.77.33.0
         netmask: 255.255.255.0
+        cidr: /24
         zone: outside
-      - cidr: /32
-        description: Remote Access VPN
+      - description: Remote Access VPN
         network: 181.171.22.33
         netmask: 255.255.255.255
+        cidr: /32
         zone: outside
-      - cidr: /32
-        description: Ryan C.
+      - description: Ryan C.
         network: 11.22.33.44
         netmask: 255.255.255.255
+        cidr: /32
         zone: outside
 
     ##################################################
@@ -26,7 +26,8 @@ whitelist:
     # This will be the Firewall NAT range.
     ##################################################
     onprem:
-      - cidr: /24
+      - description: Tunnel NAT range
         network: 68.71.225.0
         netmask: 255.255.255.0
+        cidr: /24
         zone: inside

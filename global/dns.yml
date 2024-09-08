@@ -3,5 +3,5 @@ dns:
   description: CloudFlare DNS servers
   domain: net.ryancouncil.com
   servers:
-  - 1.1.1.1
-  - 1.0.0.1
+    - 1.1.1.1
+    - 1.0.0.1

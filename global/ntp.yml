@@ -2,6 +2,6 @@
 ntp:
   description: NIST Internet time servers
   servers:
-  - 129.6.15.28
-  - 129.6.15.29
-  - 132.163.96.1
+    - 129.6.15.28
+    - 129.6.15.29
+    - 132.163.96.1

@@ -1,19 +1,30 @@
 whitelist:
   ssh:
+
+    ##################################################
+    # Whitelist for public IP access to devices.
+    ##################################################
     public:
-      zone: outside
       - cidr: /24
         description: Headquarters
         network: 144.77.33.0
         netmask: 255.255.255.0
+        zone: outside
       - cidr: /32
         description: Remote Access VPN
         network: 181.171.22.33
         netmask: 255.255.255.255
+        zone: outside
       - cidr: /32
         description: Ryan C.
         network: 11.22.33.44
         netmask: 255.255.255.255
+        zone: outside
+
+    ##################################################
+    # On-Premises, company managed client sites.
+    # This will be the Firewall NAT range.
+    ##################################################
     onprem:
       - cidr: /24
         network: 68.71.225.0

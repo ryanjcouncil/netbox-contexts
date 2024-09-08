@@ -1,0 +1,9 @@
+{
+    "users": {
+        "admins": {
+            "netadmin": {
+                "privilege": 15
+            }
+        }
+    }
+}

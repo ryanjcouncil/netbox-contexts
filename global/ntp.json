@@ -1,0 +1,10 @@
+{
+    "ntp": {
+        "description": "NIST Internet Time Servers",
+        "servers": [
+            "129.6.15.28",
+            "129.6.15.29",
+            "132.163.96.1"
+        ]
+    }
+}

@@ -1,5 +1,5 @@
 whitelist:
-  ssh:
+  management:
 
     ##################################################
     # Whitelist for public IP access to devices.

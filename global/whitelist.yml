@@ -1,0 +1,29 @@
+whitelist:
+  ssh:
+
+    ##################################################
+    # Whitelist for public IP access to devices.
+    ##################################################
+    public:
+      headquarters:
+        cidr: /24
+        network: 144.77.33.0
+        netmask: 255.255.255.0
+      ravpn:
+        cidr: /32
+        network: 11.22.33.44
+        netmask: 255.255.255.255
+      rcouncil:
+        cidr: /32
+        network: 181.171.22.33
+        netmask: 255.255.255.255
+
+    ##################################################
+    # On-Premises, company managed client sites.
+    # This will be the Firewall NAT range.
+    ##################################################
+    onprem:
+      tunnel:
+        cidr: /24
+        network: 68.71.225.0
+        netmask: 255.255.255.0

@@ -2,7 +2,3 @@
 ssh:
   version: 2
   timeout: 5
-  whitelist:
-  - network: 68.71.225.0
-    netmask: 255.255.255.0
-    cidr: /24
